@@ -1,4 +1,4 @@
-name: Docker Image CI
+name: Docker Image CI Frontend
 on:
   push:
     branches: [ "main" ]
@@ -21,7 +21,7 @@ jobs:
       -
         name: udagram-api-frontend
         run: |
-          docker build -t udagram-api-frontend ./udagram-api-frontend
-          docker tag udagram-api-frontend khang610/udagram-api-frontend:latest
-          docker push khang610/udagram-api-frontend:latest
+          docker build -t udagram-api-frontend ./udagram-frontend
+          docker tag udagram-frontend khang610/udagram-frontend:latest
+          docker push khang610/udagram-frontend:latest
           
