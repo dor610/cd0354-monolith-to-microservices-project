@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-        - image: khang610/udagram-api-feed
+        - image: khang610/udagram-api-feed:v2
           name: backend-feed
           ports:
           - containerPort: 8080
@@ -25,7 +25,7 @@ spec:
               memory: "64Mi"
               cpu: "250m"
             limits:
-              memory: "1024Mi"
+              memory: "500Mi"
               cpu: "500m"
           env:
             - name: URL
