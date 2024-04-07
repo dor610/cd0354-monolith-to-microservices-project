@@ -1,5 +1,4 @@
-name: Docker Image CI - udagram-api-feed
-
+name: Docker Image CI
 on:
   push:
     branches: [ "main" ]
@@ -20,7 +19,8 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       -
+        name: udagram-api-feed
         run: |
           docker build -t udagram-api-feed ./udagram-api-feed
           docker tag udagram-api-feed khang610/udagram-api-feed:latest
-          docker push khang610/udagram-api-feed:v1
+          docker push khang610/udagram-api-feed:latest
