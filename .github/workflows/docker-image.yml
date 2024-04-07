@@ -20,13 +20,7 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
       -
-        name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-      -
-        name: Build and push
-        uses: docker/build-push-action@v5
-        with:
-          context: .
-          file: ./udagram-api-feed/Dockerfile
-          push: true
-          tags: khang610/udagram-api-feed:latest
+        run: |
+          docker build -t udagram-api-feed ./udagram-api-feed
+          docker tag udagram-api-feed khang610/udagram-api-feed:latest
+          docker push khang610/udagram-api-feed:v1
