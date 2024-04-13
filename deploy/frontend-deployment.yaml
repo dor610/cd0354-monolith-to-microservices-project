@@ -22,11 +22,11 @@ spec:
           - containerPort: 80
           resources:
             requests:
-              memory: "750Mi"
-              cpu: "400m"
+              memory: "64Mi"
+              cpu: "250m"
             limits:
-              memory: "1500Mi"
-              cpu: "750m"
+              memory: "2048Mi"
+              cpu: "500m"
           env:
             - name: URL
               valueFrom:

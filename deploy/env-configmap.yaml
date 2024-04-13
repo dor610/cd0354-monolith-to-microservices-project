@@ -6,7 +6,7 @@ data:
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testing
-  URL: a2c50f670d722493ba540c8123a38774-2004832875.us-east-1.elb.amazonaws.com
+  URL: http://a2c50f670d722493ba540c8123a38774-2004832875.us-east-1.elb.amazonaws.com/
 kind: ConfigMap
 metadata:
   creationTimestamp: "2024-04-07T16:07:41Z"
