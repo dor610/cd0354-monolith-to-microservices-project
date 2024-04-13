@@ -15,7 +15,7 @@ spec:
         service: udagram-frontend
     spec:
       containers:
-        - image: khang610/udagram-frontend:v2
+        - image: khang610/udagram-frontend:v3
           name: udagram-frontend
           imagePullPolicy: Always
           ports:
