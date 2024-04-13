@@ -22,23 +22,23 @@ jobs:
         name: udagram-api-user
         run: |
           docker build -t udagram-api-user ./udagram-api-user
-          docker tag udagram-api-user khang610/udagram-api-user:v3
-          docker push khang610/udagram-api-user:v3
+          docker tag udagram-api-user khang610/udagram-api-user:v4
+          docker push khang610/udagram-api-user:v4
       -
         name: udagram-api-feed
         run: |
           docker build -t udagram-api-feed ./udagram-api-feed
-          docker tag udagram-api-feed khang610/udagram-api-feed:v3
-          docker push khang610/udagram-api-feed:v3
+          docker tag udagram-api-feed khang610/udagram-api-feed:v4
+          docker push khang610/udagram-api-feed:v4
       -
         name: udagram-reverseproxy
         run: |
           docker build -t udagram-reverseproxy ./udagram-reverseproxy
-          docker tag udagram-reverseproxy khang610/udagram-reverseproxy:v3
-          docker push khang610/udagram-reverseproxy:v3
+          docker tag udagram-reverseproxy khang610/udagram-reverseproxy:v4
+          docker push khang610/udagram-reverseproxy:v4
       -
         name: udagram-api-frontend
         run: |
           docker build -t udagram-frontend ./udagram-frontend
-          docker tag udagram-frontend khang610/udagram-frontend:v3
-          docker push khang610/udagram-frontend:v3
+          docker tag udagram-frontend khang610/udagram-frontend:v4
+          docker push khang610/udagram-frontend:v4

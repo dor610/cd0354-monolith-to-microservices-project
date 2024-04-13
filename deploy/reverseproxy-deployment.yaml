@@ -15,7 +15,7 @@ spec:
         service: reverseproxy
     spec:
       containers:
-        - image: khang610/udagram-reverseproxy:v3
+        - image: khang610/udagram-reverseproxy:v4
           name: reverseproxy
           ports:
             - containerPort: 8080
