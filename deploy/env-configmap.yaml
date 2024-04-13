@@ -1,8 +1,8 @@
 apiVersion: v1
 data:
-  POSTGRES_HOST: cdr.cicyjckgqyvo.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: cdr.c32oqig8e7vx.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: arn:aws:s3:::udc-234786153626-pj3
+  AWS_BUCKET: arn:aws:s3:::k-471112616349-ud3
   AWS_REGION: us-east-1
   AWS_PROFILE: default
   JWT_SECRET: testing
