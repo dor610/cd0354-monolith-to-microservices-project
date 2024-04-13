@@ -15,7 +15,7 @@ spec:
         service: backend-feed
     spec:
       containers:
-        - image: khang610/udagram-api-feed:v4
+        - image: khang610/udagram-api-feed:v5
           name: backend-feed
           ports:
           - containerPort: 8080
